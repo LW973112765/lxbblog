@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <!-- 针对IE浏览器的一个特殊配置，含义是让IE浏览器以最高的渲染级别渲染页面 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 开启移动端的理想视口 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- 配置页签图标 -->
+    <link rel="icon" href="title.ico" />
+    <!-- 引入第三方样式 -->
+    <!-- <link rel="stylesheet" href="<%= BASE_URL %>css/bootstrap.css"> -->
+    <!-- 配置网页标题 -->
+    <title>狼小宝</title>
+    <style>
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 20px;
+        background-color: gray;
+      }
+      ::-webkit-scrollbar-track {
+        background: #999;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #f0bbc3, #10a44a);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 当浏览器不支持js时noscript中的元素就会被渲染 -->
+
+    <!-- 容器 -->
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <mavon-editor v-model="value" />
+  </body>
+</html>

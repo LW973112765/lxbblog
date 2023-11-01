@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>mmm</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <button>点击</button>
+    <script>
+      var timer;
+      function debounce(fn, delay) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          fn();
+        }, delay);
+      }
+      function zxl() {
+        console.log("郎小宝");
+      }
+      document.querySelector("button").onclick = () => {
+        debounce(zxl, 2000);
+      };
+    </script>
+  </body>
+</html>
