@@ -17,8 +17,8 @@ const qiniu = require("qiniu"); // 七牛云模块
 const { NULL } = require("sass");
 
 // 创建上传凭证
-const accessKey = "IB2G12tinxW5pJb8TKDy9zIA0BNURuxNN920ZKsw"; //accessKey
-const secretKey = "XltkebOJX1_x24ttldjhVfLIBspkozl9KRJycWJ2"; //secretKey
+const accessKey = ""; //accessKey
+const secretKey = ""; //secretKey
 
 function getToken() {
   // 将getToken封装成函数，每次请求token将获取一个新的token
